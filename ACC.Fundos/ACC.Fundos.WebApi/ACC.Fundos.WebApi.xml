@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ACC.Fundos.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:ACC.Fundos.WebApi.Controllers.FundosController.ListarFundosInvestimentos">
+            <summary>
+            Listar fundos de investimentos
+            </summary>
+            <remarks>
+            Listar fundos de investimentos
+            </remarks>
+        </member>
+        <member name="M:ACC.Fundos.WebApi.Controllers.FundosController.ObterFundoInvestimento(ACC.Fundos.Contract.RequestDTO.FiltroObterFundoDTO)">
+            <summary>
+            Obter fundo de investimento
+            </summary>
+            <remarks>
+            Obter fundo de investimento
+            </remarks>
+        </member>
+        <member name="M:ACC.Fundos.WebApi.Controllers.FundosController.ObterInformacoesDiariaFundo(ACC.Fundos.Contract.RequestDTO.FiltroInformacaoFundoDTO)">
+            <summary>
+            Obter informações diaria do fundo
+            </summary>
+            <remarks>
+            Obter informações diaria do fundo
+            </remarks>
+        </member>
+    </members>
+</doc>

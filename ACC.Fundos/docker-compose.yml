@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  acc.fundos.web:
+    image: ${DOCKER_REGISTRY-}accfundosweb
+    build:
+      context: .\ACC.Fundos.Web
+      dockerfile: Dockerfile

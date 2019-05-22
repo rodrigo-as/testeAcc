@@ -1,0 +1,44 @@
+﻿/* swagger ui customization */
+body.swagger-section #header {
+    background-color: #bcbebf;
+    background-image: url(https://www.gitex.com/__media/libraries/exhibitors/A9E3231C-5056-B757-5C06B5DE31AE8EAE-cover_image.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: 20px;
+    height: 40px;
+    padding-top: 25px;
+}
+
+    body.swagger-section #header .swagger-ui-wrap #logo {
+        display: none;
+    }
+
+.swagger-ui button {
+    cursor: pointer;
+    outline: none
+}
+
+.swagger-section #explore, .swagger-section #auth_container .authorize__btn {
+    font-weight: 500;
+    border: none;
+    background: #5a91cd;
+    font-family: Titillium Web, sans-serif;
+    color: #fff;
+}
+
+    .swagger-section #explore:hover, .swagger-section #auth_container .authorize__btn:hover {
+        font-weight: 500;
+        border: none;
+        background: #bcbebf;
+        font-family: Titillium Web, sans-serif;
+        color: #39404d;
+    }
+
+.swagger-section #input_apiKey {
+    width: 200px;
+    display: none;
+}
+
+.swagger-section #input_baseUrl {
+    width: 600px;
+}

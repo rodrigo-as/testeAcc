@@ -1,0 +1,49 @@
+
+2019-05-21 10:43:16,007 DEBUG ACC.Fundos.WebApi.Controllers.FundosController - Listar fundos de investimentos
+2019-05-21 11:27:30,210 DEBUG ACC.Fundos.WebApi.Controllers.FundosController - Listar fundos de investimentos
+2019-05-21 11:28:23,169 DEBUG ACC.Fundos.WebApi.Controllers.FundosController - Listar fundos de investimentos
+2019-05-21 12:11:08,317 ERROR ACC.Fundos.Business.Integration.CVM.IntegracaoCVM - Erro no ObterInformacoesFundo: CsvHelper.TypeConversion.TypeConverterException: The conversion cannot be performed.
+    Text: '1135109.72'
+    MemberType: System.Decimal
+    TypeConverter: 'CsvHelper.TypeConversion.DecimalConverter'
+   em CsvHelper.TypeConversion.DefaultTypeConverter.ConvertFromString(String text, IReaderRow row, MemberMapData memberMapData)
+   em CsvHelper.TypeConversion.DecimalConverter.ConvertFromString(String text, IReaderRow row, MemberMapData memberMapData)
+   em lambda_method(Closure )
+   em CsvHelper.Expressions.RecordCreator.Create[T]()
+   em CsvHelper.Expressions.RecordManager.Create[T]()
+   em CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   em System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em ACC.Fundos.Business.Integration.CVM.IntegracaoCVM.ObterInformacoesFundo(String CnpjFundo) na C:\Users\rodrigo.silva\Desktop\ACC.Fundos\ACC.Fundos\ACC.Fundos.Business\Integration\CVM\IntegracaoCVM.cs:linha 57
+2019-05-21 12:11:08,341 ERROR ACC.Fundos.WebApi.Controllers.FundosController - Erro ObterInformacoesDiariaFundo: System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: source
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em ACC.Fundos.Business.Service.FundosService.ObterInformacoesDiariaFundo(FiltroInformacaoFundoDTO filtro) na C:\Users\rodrigo.silva\Desktop\ACC.Fundos\ACC.Fundos\ACC.Fundos.Business\Service\FundosService .cs:linha 45
+   em ACC.Fundos.WebApi.Controllers.FundosController.ObterInformacoesDiariaFundo(FiltroInformacaoFundoDTO filtro) na C:\Users\rodrigo.silva\Desktop\ACC.Fundos\ACC.Fundos\ACC.Fundos.WebApi\Controllers\FundosController.cs:linha 56
+2019-05-21 12:35:11,745 ERROR ACC.Fundos.Business.Integration.CVM.IntegracaoCVM - Erro no ObterFundo: CsvHelper.HeaderValidationException: Header with name 'DENOM_SOCIAL' was not found. If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+   em CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(Boolean isValid, String[] headerNames, Int32 headerNameIndex, ReadingContext context)
+   em CsvHelper.CsvReader.ValidateHeader(ClassMap map)
+   em CsvHelper.CsvReader.ValidateHeader(Type type)
+   em CsvHelper.CsvReader.ValidateHeader[T]()
+   em CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   em System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   em System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   em ACC.Fundos.Business.Integration.CVM.IntegracaoCVM.ObterFundo(String CnpjFundo) na C:\Users\rodrigo.silva\Desktop\ACC.Fundos\ACC.Fundos\ACC.Fundos.Business\Integration\CVM\IntegracaoCVM.cs:linha 57
+2019-05-21 12:35:11,771 ERROR ACC.Fundos.Business.Mapping.FundosMapper - Erro no mapper CadastroFundo_TO_FundoDTO: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em ACC.Fundos.Business.Mapping.FundosMapper.CadastroFundo_TO_FundoDTO(CadastroFundo cadastroFundo) na C:\Users\rodrigo.silva\Desktop\ACC.Fundos\ACC.Fundos\ACC.Fundos.Business\Mapping\FundosMapper.cs:linha 20
+2019-05-21 12:38:37,883 ERROR ACC.Fundos.Business.Integration.CVM.IntegracaoCVM - Erro no ObterFundo: CsvHelper.HeaderValidationException: Header with name 'DENOM_SOCIAL' was not found. If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+   em CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(Boolean isValid, String[] headerNames, Int32 headerNameIndex, ReadingContext context)
+   em CsvHelper.CsvReader.ValidateHeader(ClassMap map)
+   em CsvHelper.CsvReader.ValidateHeader(Type type)
+   em CsvHelper.CsvReader.ValidateHeader[T]()
+   em CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   em System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   em System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   em ACC.Fundos.Business.Integration.CVM.IntegracaoCVM.ObterFundo(String CnpjFundo)
+2019-05-21 12:38:37,915 ERROR ACC.Fundos.Business.Mapping.FundosMapper - Erro no mapper CadastroFundo_TO_FundoDTO: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em ACC.Fundos.Business.Mapping.FundosMapper.CadastroFundo_TO_FundoDTO(CadastroFundo cadastroFundo)
+2019-05-22 12:20:51,042 ERROR ACC.Fundos.Business.Mapping.FundosMapper - Erro no mapper CadastroFundo_TO_FundoDTO: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em ACC.Fundos.Business.Mapping.FundosMapper.CadastroFundo_TO_FundoDTO(CadastroFundo cadastroFundo) na C:\Users\rodrigo.silva\Desktop\ACC.Fundos\ACC.Fundos\ACC.Fundos.Business\Mapping\FundosMapper.cs:linha 20
+2019-05-22 12:21:01,994 ERROR ACC.Fundos.Business.Mapping.FundosMapper - Erro no mapper CadastroFundo_TO_FundoDTO: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em ACC.Fundos.Business.Mapping.FundosMapper.CadastroFundo_TO_FundoDTO(CadastroFundo cadastroFundo) na C:\Users\rodrigo.silva\Desktop\ACC.Fundos\ACC.Fundos\ACC.Fundos.Business\Mapping\FundosMapper.cs:linha 20

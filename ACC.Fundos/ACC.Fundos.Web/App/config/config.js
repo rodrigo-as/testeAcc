@@ -1,0 +1,1 @@
+﻿var uriApi = 'http://localhost:82/api/';
